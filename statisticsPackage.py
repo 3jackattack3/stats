@@ -14,5 +14,7 @@ def median(list):
     else:
         return average(list[len(list)/2], list[len(list)/2+1])
 
+        #hello!
+
 print(add(2,6))
 print(average([4,4,6,10]))
