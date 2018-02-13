@@ -18,18 +18,35 @@ def mode(list):
     longestStreak = 0
     currentStreak = 0
     streakValue = 0
+    #secondModeValue = 0
 
     for counter in range(len(list)-1):
         if(list[counter] != list[counter+1]):
             currentStreak = 0
+        #if(currentStreak == longestStreak):
+            #secondModeValue = list[counter]
         if(longestStreak < currentStreak):
             longestStreak = currentStreak
             streakValue = list[counter]
         currentStreak+=1
 
+    #if(streakValue == secondModeValue):
     return streakValue
 
-#def range:
+    #return [streakValue, secondModeValue]
+
+def myRange(list):
+    smallest = list[0]
+    largest = list[0]
+
+    for counter in range(len(list)):
+        if(list[counter] < smallest):
+            smallest = list[counter]
+        if(list[counter] > largest):
+            largest = list[counter]
+
+    return largest-smallest
+
 
 #def std:
 
@@ -38,4 +55,5 @@ def mode(list):
 print(add(2,6))
 print(average([4,4,6,14]))
 print(median([1,3,4,5,6]))
-print(mode([1,2,2,2]))
+print(mode([1,2,3,3]))
+print(myRange([-1,2,3,5]))
