@@ -1,3 +1,5 @@
+import math
+
 def add(num1, num2):
     return num1+num2
 
@@ -48,7 +50,17 @@ def myRange(list):
     return largest-smallest
 
 
-#def std:
+def std(list):
+    Average = 0
+    Average = average(list)
+    std = 0
+
+    for counter in range(len(list)):
+        std += (list[counter] - Average)**2
+
+    std /= len(list)
+
+    return math.sqrt(std)
 
 
 
@@ -57,3 +69,4 @@ print(average([4,4,6,14]))
 print(median([1,3,4,5,6]))
 print(mode([1,2,3,3]))
 print(myRange([-1,2,3,5]))
+print(std([1,2,3,4,5]))
