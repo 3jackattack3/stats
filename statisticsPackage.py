@@ -68,4 +68,5 @@ print(median([1,3,4,5,6]))
 print(mode([1,2,3,3]))
 print(myRange([-1,2,3,5]))
 print(std([1,2,3,4,5]))
-//comment
+#comment
+#another comment
