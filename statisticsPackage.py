@@ -36,7 +36,7 @@ def mode(list):
     return streakValue
 
     #return [streakValue, secondModeValue]
-
+#randomcomment
 def myRange(list):
     smallest = list[0]
     largest = list[0]
